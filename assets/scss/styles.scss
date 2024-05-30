@@ -1,3 +1,7 @@
-body{
-    background-color: red;
-}
+@import "config/mixin";
+@import "config/variables";
+@import "layout/layout";
+@import "base/base";
+@import "components/botons";
+@import "components/header";
+@import "components/menu";

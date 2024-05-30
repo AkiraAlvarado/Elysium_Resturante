@@ -1,0 +1,61 @@
+:root {
+    --black-700: #151515;
+    --black-500: #232323;
+    --black-300: #4F4F4F;
+    --yellow-600: #DCB06B;
+    --yellow-500: #F4C377;
+    --yellow-400: #F6CF92;
+    --yellow-300: #F8DBAD;
+    --white-100: #FEFEFE;
+    --white-500: #E5E5E5;
+
+}
+
+$breakpoints :(
+    l:1024px,
+    s:768px
+);
+
+$max-witdh: 1400px;
+$header-height: 4rem;
+$border-color: var(--yellow-600);
+$text-color: var(--white-100);
+
+// variables de apilamiento (z-index)
+
+:root{
+    --z-back: -10
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+//vaiorables de tipografia
+:root{
+        --h1-font-size: 2rem;
+        --h2-font-size :1.5rem;
+        --h3-font-size : 1.25rem;
+        --item-font-size: 1rem;
+        --body-font-size: 0.875rem;
+        --small-font-size: .5rem;
+ 
+    @include from(s){
+        --h1-font-size: 2.5rem;
+        --h2-font-size : 2rem;
+        --h3-font-size : 1.75rem;
+        --item-font-size: 1.25rem;
+        --body-font-size: 1rem;
+        --small-font-size: .750rem;
+    }
+
+    @include from(l){
+        --h1-font-size: 3rem;
+        --h2-font-size : 2.5rem;
+        --h3-font-size : 1.75rem;
+        --item-font-size: 1.5rem;
+        --body-font-size: 1.25rem;
+        --small-font-size: .875rem;
+    }
+}
