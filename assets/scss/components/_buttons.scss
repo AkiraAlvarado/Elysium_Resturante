@@ -1,0 +1,56 @@
+.button{
+    --padding: .75em 0.5em;
+    padding: var(--padding);
+    @include from(s){
+        --padding: .75em 1.5em;
+    }
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__default_icon{
+        background-color: var(--yellow-400);
+        color: var(--black-700);
+        transition: ease all 0.3s;
+    }
+    &__ghost_icon{
+        background: transparent;
+        color: var(--white-100);
+        border: 2px var(--yellow-600) solid;
+        transition: ease all 0.3s;
+    }
+}
+
+.button__default_icon:hover{
+    background-color: var(--yellow-600);
+    cursor: pointer;
+}
+
+
+.button__ghost_icon:hover {
+    background-color: var(--yellow-300);
+    color: var(--black-300);
+    border-color: var(--black-300);
+    border-width: 2px;
+    cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.button__ghost_icon:hover .icon__ghost {
+    filter: invert(42%) sepia(0%) saturate(4924%) hue-rotate(78deg) brightness(76%) contrast(103%);
+}
+
+.icon{
+    margin: 0;
+    padding: 0;
+    width: var(--h3-font-size);
+    text-align: center;
+    padding-right: 0.2em ;
+    &__ghost{
+        filter: invert(100%) sepia(0%) saturate(1887%) hue-rotate(295deg) brightness(105%) contrast(99%);
+        transition: filter 0.3s ease;
+    }
+}

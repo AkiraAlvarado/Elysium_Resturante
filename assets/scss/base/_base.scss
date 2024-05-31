@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 *, ::after, ::before{
     box-sizing: border-box;
     padding: 0;
@@ -20,13 +22,17 @@ img{
 
 h1{
     font-size: var(--h1-font-size);
+    font-family: "Lora", serif;
+    font-weight: 500;
 }
 
 h2{
     font-size: var(--h2-font-size);
+    font-family: "Lora", serif;
 }
 
 h1,h2,h3,h4,h5{
+    font-family: "Lora", serif;
     margin-top: 0;
     margin-bottom: 0;
 }

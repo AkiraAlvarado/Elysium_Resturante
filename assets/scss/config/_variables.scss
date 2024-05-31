@@ -13,7 +13,8 @@
 
 $breakpoints :(
     l:1024px,
-    s:768px
+    s:768px,
+    xs: 472px
 );
 
 $max-witdh: 1400px;
@@ -31,15 +32,23 @@ $text-color: var(--white-100);
     --z-modal: 1000;
 }
 
-
 //vaiorables de tipografia
 :root{
+        --h1-font-size: 1.5rem;
+        --h2-font-size :1.25rem;
+        --h3-font-size : 1.10rem;
+        --item-font-size: 0.875rem;
+        --body-font-size: 0.650rem;
+        --small-font-size: .4rem;
+    
+    @include from(xs){
         --h1-font-size: 2rem;
-        --h2-font-size :1.5rem;
+        --h2-font-size : 1.5rem;
         --h3-font-size : 1.25rem;
-        --item-font-size: 1rem;
+        --item-font-size: 1.10rem;
         --body-font-size: 0.875rem;
-        --small-font-size: .5rem;
+        --small-font-size: .650rem;
+    }
  
     @include from(s){
         --h1-font-size: 2.5rem;
