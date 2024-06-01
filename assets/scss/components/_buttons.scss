@@ -1,12 +1,15 @@
 .button{
-    --padding: .75em 0.5em;
+    --padding: .4em 0.5em;
     padding: var(--padding);
-    @include from(s){
+    @include from(xs){
+        --padding: .55em 1.5em;
+    }
+    @include from(xs){
         --padding: .75em 1.5em;
     }
     border-radius: 0.5rem;
     font-weight: 600;
-    margin: 1rem 0.5rem;
+    margin: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -8,13 +8,15 @@
 </head>
 <body>
     <header class="main-header">
-        <img class="main-header__imagen" src="assets/img/pexels-pixabay-260922 3.png">
-        <div class="main-menu__toggle" id="main-menu_toggle"></div>
-        <div class="l-container main-header__block">
+        <div class="main-header__cover-container">
+            <img class="main-header__imagen" src="assets/img/pexels-pixabay-260922 3.png">
+        </div>
+            <div class="l-container main-header__block">
+            <div class="main-menu__toggle" id="main-menu__toggle">.</div>
             <div class="navbar">
                 <img class="main-logo" src="assets/img/logo.png">
                 <nav>
-                    <ul class="main-menu">
+                    <ul class="main-menu" id="main-menu">
                         <li class="main-menu__item"><a class="main-menu__link">Inicio</a></li>
                         <li class="main-menu__item"><a class="main-menu__link">Menu</a></li>
                         <li class="main-menu__item"><a class="main-menu__link">Reservación</a></li>
@@ -35,6 +37,26 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="main-portada l-container">
+            <div class="main-portada__fotos">
+                <img src="assets/img/Foto Portada 1.jpg" class="main-portada__foto1 fotos">
+                <img src="assets/img/Foto Portada 2.jpg" class="main-portada__foto2 fotos">
+                <img src="assets/img/Foto Portada 3.jpg" class="main-portada__foto3 fotos">
+                <img src="assets/img/Foto Portada 4.jpg" class="main-portada__foto4 fotos">
+            </div>
+            <div class="main-portada__content">
+                <h2 class="main-portada__titulo">Nuesta Historia</h2>
+                <p class="main-portada__description">Elysium Gourmet fue inaugurado en 2018 por la chef Valentina Rojas, una renombrada chef peruana con una profunda 
+                    pasión por la gastronomía y la cultura de su país. Tras estudiar en la prestigiosa Le Cordon Bleu en París y trabajar
+                    en algunos de los mejores restaurantes de Europa y América, Valentina regresó a Perú con un sueño: crear
+                    un restaurante que fusionara la sofisticación internacional con los sabores autóctonos de su tierra natal.</p>
+                <div class="button button__ghost_icon"> <span><img class="icon icon__ghost" src="assets/img/Ver_menu.png"></span> Conoce a Nuestros Chefs</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

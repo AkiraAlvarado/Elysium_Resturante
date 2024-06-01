@@ -37,7 +37,8 @@ $text-color: var(--white-100);
         --h1-font-size: 1.5rem;
         --h2-font-size :1.25rem;
         --h3-font-size : 1.10rem;
-        --item-font-size: 0.875rem;
+        --item-font-size: 0.750rem;
+        --description-font-size: 0.650;
         --body-font-size: 0.650rem;
         --small-font-size: .4rem;
     
@@ -46,6 +47,7 @@ $text-color: var(--white-100);
         --h2-font-size : 1.5rem;
         --h3-font-size : 1.25rem;
         --item-font-size: 1.10rem;
+        --description-font-size: 1rem;
         --body-font-size: 0.875rem;
         --small-font-size: .650rem;
     }
@@ -55,6 +57,7 @@ $text-color: var(--white-100);
         --h2-font-size : 2rem;
         --h3-font-size : 1.75rem;
         --item-font-size: 1.25rem;
+        --description-font-size: 1.15rem;
         --body-font-size: 1rem;
         --small-font-size: .750rem;
     }
@@ -64,6 +67,7 @@ $text-color: var(--white-100);
         --h2-font-size : 2.5rem;
         --h3-font-size : 1.75rem;
         --item-font-size: 1.5rem;
+        --description-font-size: 1.6rem;
         --body-font-size: 1.25rem;
         --small-font-size: .875rem;
     }
