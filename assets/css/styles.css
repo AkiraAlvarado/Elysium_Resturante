@@ -131,6 +131,26 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0; }
 
+.link {
+  cursor: pointer; }
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--yellow-500);
+  transition: width 0.3s ease, left 0.3s ease; }
+
+.link:hover::after {
+  width: 100%; }
+
+.link:hover {
+  color: var(--yellow-500); }
+
+.link:active {
+  color: var(--yellow-600); }
+
 .button {
   --padding: .4em 0.5em;
   padding: var(--padding);
@@ -298,26 +318,6 @@ h1, h2, h3, h4, h5 {
 
 .show {
   left: 10vw; }
-
-.link {
-  cursor: pointer; }
-
-.link::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: var(--yellow-500);
-  transition: width 0.3s ease, left 0.3s ease; }
-
-.link:hover::after {
-  width: 100%; }
-
-.link:hover {
-  color: var(--yellow-500); }
-
-.link:active {
-  color: var(--yellow-600); }
 
 .main-portada {
   display: flex;
