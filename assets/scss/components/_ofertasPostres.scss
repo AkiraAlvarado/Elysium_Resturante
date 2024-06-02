@@ -1,0 +1,79 @@
+.main-postres{
+    margin-top: var(--margin-top);
+    &__titulo{
+        color: var(--yellow-400);
+        text-align: center;
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: var(--margin-bottom);
+    }
+    &__cards{
+        display: flex;
+        gap: 2.5rem;
+        @include from(l){
+            gap: 3.5rem;;
+        }
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include from(s){
+            flex-direction: row;
+        }
+    }
+}
+
+.card-postre{
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        border-radius: 0 0 10px 10px;
+        @include from(s){
+            padding: 0.6em;
+        }
+        @include from(l){
+            padding: 1em;
+        }
+        background-color: var(--black-300);
+    }
+
+    &__nombre{
+        font-size: var(--item-font-size);
+        margin-top: 0.5em;
+    }
+ 
+    &__foto{
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+
+        max-width: 20rem;
+        @include from(xs){
+            max-width: 30rem;
+        }
+        @include from(s){
+            max-width: 32rem;
+        }
+    }
+    &__puntuación{
+        width: auto;
+        max-height: 1rem;
+        @include from(l){
+            max-height: 3rem;
+        }
+    }
+    &__footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__ordenar{
+        text-align: end;
+    }
+
+
+}

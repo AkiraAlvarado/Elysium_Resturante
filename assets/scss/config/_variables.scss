@@ -22,6 +22,39 @@ $header-height: 4rem;
 $border-color: var(--yellow-600);
 $text-color: var(--white-100);
 
+
+:root{
+
+    //variable de separción de secciones
+    --margin-top:1.15rem;
+    @include from(xs){
+        --margin-top:1.5rem;
+    }
+ 
+    @include from(s){
+        --margin-top:3.5rem;
+    }
+
+    @include from(l){
+        --margin-top:5rem;
+    }
+
+    //variable de separción de elementos
+    --margin-bottom:1rem;
+    @include from(xs){
+        --margin-bottom:1.5rem;
+    }
+ 
+    @include from(s){
+        --margin-bottom:2rem;
+    }
+
+    @include from(l){
+        --margin-bottom:2.5rem;
+    }
+
+}
+
 // variables de apilamiento (z-index)
 
 :root{
@@ -30,6 +63,12 @@ $text-color: var(--white-100);
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+}
+
+:root{
+    --item-font-weight: 600;
+    --body-font-weight-bold: 700;
+    --body-font-weight-medium: 500;
 }
 
 //vaiorables de tipografia
