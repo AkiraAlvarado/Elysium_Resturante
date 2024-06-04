@@ -1,5 +1,6 @@
 .main-postres{
     margin-top: var(--margin-top);
+
     &__titulo{
         color: var(--yellow-400);
         text-align: center;
@@ -9,34 +10,50 @@
         margin-bottom: var(--margin-bottom);
     }
     &__cards{
-        display: flex;
-        gap: 2.5rem;
-        @include from(l){
-            gap: 3.5rem;;
-        }
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        // display: flex;
+        // gap: 2.5rem;
+        // @include from(l){
+        //     gap: 3.5rem;;
+        // }
+        // justify-content: space-between;
+        // align-items: center;
+        // flex-direction: column;
+        // @include from(s){
+        //     flex-direction: row;
+        // }
+
+        display: grid;
+       
+        grid-template-rows: repeat(auto-fit,minmax(230px, 1fr));
+        gap: 1.5rem;
         @include from(s){
-            flex-direction: row;
+            gap: 0;
+            grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
         }
+    
+        
     }
 }
 
 .card-postre{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    @include from(s){
+        width: 90%;
+    }
+
+    margin: 0 auto;
 
     &__content{
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        justify-content: space-between;
+        
         padding: 1em;
+        gap: 1em;
+   
         border-radius: 0 0 10px 10px;
-        @include from(s){
-            padding: 0.6em;
-        }
-        @include from(l){
-            padding: 1em;
-        }
         background-color: var(--black-300);
     }
 
@@ -47,16 +64,16 @@
  
     &__foto{
         object-fit: cover;
-        width: 100%;
+        object-fit: center;
         border-radius: 10px 10px 0 0;
-
-        max-width: 20rem;
-        @include from(xs){
-            max-width: 30rem;
+        width: 100%;
+        flex: 1;
+       
+        max-height: 20rem;
+        @include from(l){
+            max-height: 100rem;
         }
-        @include from(s){
-            max-width: 32rem;
-        }
+        
     }
     &__puntuación{
         width: auto;
@@ -71,9 +88,29 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    &__tiempo{
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+    }
+
+
     &__ordenar{
         text-align: end;
     }
 
 
+}
+
+.clock{
+    width: var(--item-font-size);
+    text-align: center;
+    padding-top: 0.2em;
+    padding-right: 0.1em ;
+}
+
+.postre{
+    width: 100%;
+    height: 100%;
 }

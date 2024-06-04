@@ -2,6 +2,8 @@
 .main-portada{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
     &__fotos{
         width: 100%;
         display: grid;
@@ -45,7 +47,7 @@
     }
     &__titulo{
         color: var(--yellow-400);
-        padding-bottom: 1.5em;
+        padding-bottom: 1em;
     }
     &__description{
         line-height: 2.5em;
