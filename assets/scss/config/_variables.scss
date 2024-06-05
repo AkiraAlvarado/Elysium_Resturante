@@ -25,15 +25,15 @@ $text-color: var(--white-100);
 
 :root{
     //variable de separción de secciones
-    --margin-top:1.15rem;
+    --margin-top:2rem;
     @include from(xs){
-        --margin-top:1.5rem;
+        --margin-top:2.5rem;
     }
     @include from(s){
-        --margin-top:3.5rem;
+        --margin-top:4rem;
     }
     @include from(l){
-        --margin-top:5rem;
+        --margin-top:6rem;
     }
     //variable de separción de elementos
     --margin-bottom:2.5rem;
