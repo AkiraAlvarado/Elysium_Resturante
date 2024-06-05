@@ -1,6 +1,4 @@
-
 .main-header{
-    
     &__imagen{
         position: absolute;
         top: 0;
@@ -33,40 +31,37 @@
     align-items: center;
 }
 
-.header-content{
-    position: relative;
-    width: 80%;
+.header-content{    
     --margin-top: 7vmin;
+    --margin-bottom: 0.5rem;
+    --line-height: 1rem;
 
-    margin-top: var(--margin-top);
+    @include from(xs){
+        --line-height: 1.2rem;
+    }
     @include from(s){
         --margin-top: 15vmin;
+        --margin-bottom: 1rem;
+        --line-height: 1.7rem;
     }
     @include from(l){
         --margin-top: 20vmin;
+        --margin-bottom: 1.5rem;
     }
 
+    margin-top: var(--margin-top);
+    position: relative;
+    width: 80%;
 
     &__title{
-        --margin-bottom: 0.5rem;
         margin-bottom: var(--margin-bottom);
-        @include from(s){
-            --margin-bottom: 1rem;
-        }
-        @include from(l){
-            --margin-bottom: 1.5rem;
-        }
     }
     
     &__description{
         font-size: var(--description-font-size);
-        line-height: 1rem;
+        line-height: var(--line-height);
         margin-bottom: 0;
-        @include from(xs){
-            line-height: 1.2rem;
-        }
         @include from(s){
-            line-height: 1.7rem;
             margin-bottom: 1rem;
         }
     }

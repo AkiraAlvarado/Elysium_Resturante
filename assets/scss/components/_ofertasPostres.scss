@@ -4,55 +4,37 @@
     &__titulo{
         color: var(--yellow-400);
         text-align: center;
+        padding: 1rem;
     }
     &__description{
         text-align: center;
         margin-bottom: var(--margin-bottom);
     }
     &__cards{
-        // display: flex;
-        // gap: 2.5rem;
-        // @include from(l){
-        //     gap: 3.5rem;;
-        // }
-        // justify-content: space-between;
-        // align-items: center;
-        // flex-direction: column;
-        // @include from(s){
-        //     flex-direction: row;
-        // }
-
         display: grid;
-       
         grid-template-rows: repeat(auto-fit,minmax(230px, 1fr));
         gap: 1.5rem;
         @include from(s){
             gap: 0;
             grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
         }
-    
-        
     }
 }
 
 .card-postre{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     width: 75%;
     @include from(s){
         width: 90%;
     }
-
-    margin: 0 auto;
-
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
         padding: 1em;
         gap: 1em;
-   
         border-radius: 0 0 10px 10px;
         background-color: var(--black-300);
     }
@@ -61,19 +43,12 @@
         font-size: var(--item-font-size);
         margin-top: 0.5em;
     }
- 
     &__foto{
         object-fit: cover;
         object-fit: center;
         border-radius: 10px 10px 0 0;
         width: 100%;
         flex: 1;
-       
-        max-height: 20rem;
-        @include from(l){
-            max-height: 100rem;
-        }
-        
     }
     &__puntuación{
         width: auto;
@@ -88,19 +63,14 @@
         justify-content: space-between;
         align-items: center;
     }
-
     &__tiempo{
         display: flex;
         align-items: center;
         gap: 0.2em;
     }
-
-
     &__ordenar{
         text-align: end;
     }
-
-
 }
 
 .clock{

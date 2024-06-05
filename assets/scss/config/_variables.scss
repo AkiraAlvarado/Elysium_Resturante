@@ -24,35 +24,29 @@ $text-color: var(--white-100);
 
 
 :root{
-
     //variable de separción de secciones
     --margin-top:1.15rem;
     @include from(xs){
         --margin-top:1.5rem;
     }
- 
     @include from(s){
         --margin-top:3.5rem;
     }
-
     @include from(l){
         --margin-top:5rem;
     }
-
     //variable de separción de elementos
-    --margin-bottom:1rem;
+    --margin-bottom:2.5rem;
     @include from(xs){
-        --margin-bottom:1.5rem;
+        --margin-bottom:3rem;
     }
- 
     @include from(s){
-        --margin-bottom:2rem;
+        --margin-bottom:3.5rem;
     }
 
     @include from(l){
-        --margin-bottom:2.5rem;
+        --margin-bottom:4rem;
     }
-
 }
 
 // variables de apilamiento (z-index)
