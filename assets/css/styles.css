@@ -584,5 +584,34 @@ h1, h2, h3, h4, h5 {
   .main-reward__img {
     width: 1rem;
     margin-right: 0.5rem; }
-  .main-reward__button {
-    padding-left: 3rem; }
+
+.main-footer {
+  --padding: 1.25rem 0;
+  --margin: 1rem;
+  --width: 2.5rem;
+  margin-top: var(--margin-top);
+  background-color: var(--black-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding); }
+  @media screen and (min-width: 768px) {
+    .main-footer {
+      --padding: 3rem 0;
+      --margin: 2rem;
+      --width: 3rem; } }
+  .main-footer__elements {
+    display: flex;
+    gap: 2.5em; }
+  .main-footer__icon {
+    width: var(--width);
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: var(--white-100);
+    margin-bottom: var(--margin); }
+  .main-footer__links {
+    display: flex;
+    gap: 2em;
+    font-size: var(--body-font-size); }
+  .main-footer__link {
+    color: var(--white-100); }
