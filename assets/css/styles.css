@@ -53,7 +53,7 @@
   --item-font-size: 0.750rem;
   --description-font-size: 0.650rem;
   --body-font-size: 0.650rem;
-  --small-font-size: .4rem; }
+  --small-font-size: .5rem; }
   @media screen and (min-width: 472px) {
     :root {
       --h1-font-size: 2rem;
@@ -531,7 +531,6 @@ h1, h2, h3, h4, h5 {
     text-align: left; }
 
 .main-chef {
-  margin-top: var(--margin-top);
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem; }
@@ -582,8 +581,17 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center; }
   .main-reward__img {
-    width: 1rem;
+    width: 1.25em;
     margin-right: 0.5rem; }
+
+.main-chefs-reward {
+  margin-top: var(--margin-top);
+  text-align: center; }
+  .main-chefs-reward__title {
+    color: var(--yellow-400);
+    margin-bottom: 0.5em; }
+  .main-chefs-reward__description {
+    margin-bottom: 2em; }
 
 .main-footer {
   --padding: 1.25rem 0;
