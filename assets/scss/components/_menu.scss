@@ -24,11 +24,6 @@
         width: auto;
         z-index: var(--z-modal);
     }
-
-    &__link{
-        cursor: pointer;
-    }
-
     &__item{
        font-size: var(--h1-font-size);
        margin-top: 3rem;
@@ -38,24 +33,7 @@
         margin-top: 0;
         }
     }
-    &__link::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: var(--yellow-500);
-        transition: width 0.3s ease, left 0.3s ease;
-    }
-    &__link:hover::after{
-        width: 100%;
-     }
-    &__link:hover{
-        color: var(--yellow-500);
-    }
-    &__link:active{
-        color: var(--yellow-600);
-    }
-
+   
     &__toggle{
         position: absolute;
         right: 1rem;
@@ -74,9 +52,9 @@
     }
     
 }
-
 .show{
     left: 10vw;
  }
+
 
 

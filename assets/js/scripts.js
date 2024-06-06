@@ -14,4 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  
+  function centrarTextoImagen() {
+    const contenido = document.querySelector('.comida');
+    const imagen = document.querySelector('.main-local__foto-container');
+  
+    imagen.style.height = `${contenido.offsetHeight * 1.35}px`;
+    console.log(`${contenido.offsetHeight}px`);
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    centrarTextoImagen();
+
+    // Añade un event listener para el evento 'resize'
+    window.addEventListener('resize', centrarTextoImagen);
+});
+
 
